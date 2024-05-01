@@ -36,8 +36,8 @@ async function run() {
         const transportAuthorCollection = client.db("baiustDB").collection("transportAuthor");
         const semRegCollection = client.db("baiustDB").collection("semReg");
         const certificateCollection = client.db("baiustDB").collection("certificate");
-
         const resultCollection = client.db("baiustDB").collection("result");
+        
         //Result---------------------------------------------------------------------
         app.post('/result', async (req, res) => {
             const review = req.body;
